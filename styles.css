@@ -1,0 +1,75 @@
+header { grid-area: header; }
+.container { grid-area: main; }
+footer 
+{ 
+    grid-area: footer;
+    text-align: center;
+    font-size: 24px;
+    border-top: 1px solid black;
+    padding-top: 20px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'main main main main main main'
+    'footer footer footer footer footer footer';
+  grid-gap: 10px;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+}
+
+
+header {
+    min-height: 50px;
+    border-bottom: 1px solid black;
+    padding-bottom: 20px;
+}
+
+#logo {
+    max-width: 70px;
+    max-height: 70px;
+}
+
+#brand-name {
+    font-size: 80px;
+    margin: 20px;
+}
+
+#dropdown {
+    float: right;
+    font-size: 24px;
+    min-width: 100px;
+    margin-top: 25px;
+}
+#custom {
+  float: right;
+  border: 1px solid black;
+}
+.container {
+    min-height: 500px;
+    align-content: center;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 80%;
+}
+
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
